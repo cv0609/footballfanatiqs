@@ -35,7 +35,7 @@ use Carbon\Carbon;
     <div class="container">
         <div class="fanatiqs_leagues-inner">
             <div class="back-btn">
-                <a href="matches">
+                <a href="{{ route('leagueMatches',['leagueId'=>$matchDetails[0]->league->id]) }}">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                         fill="#fff">
                         <path d="M360-240 120-480l240-240 56 56-144 144h568v80H272l144 144-56 56Z"></path>
