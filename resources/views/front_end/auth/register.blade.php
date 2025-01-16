@@ -29,7 +29,9 @@
                     </fieldset>
                     <fieldset>
                     <input type="text" placeholder="Enter Phone Number (Optional)" name="phone" 
-                        id="phone">                 
+                        id="phone">     
+                    @error('phone')
+
                     <span class="text-danger">{{ $message }}</span>
                     @enderror
                     </fieldset>
