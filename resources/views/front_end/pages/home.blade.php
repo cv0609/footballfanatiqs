@@ -123,7 +123,7 @@
                             @error('password')
                             <span class="text-danger">{{ $message }}</span>
                             @enderror
-                            <input type="password" placeholder="Re-Enter Password">
+                            <input type="password" placeholder="Re-Enter Password" id="password-field" name="password_confirmation">
                             <button type="submit" class="btn signup">create account</button>                        
                             <hr />
                         </form>
