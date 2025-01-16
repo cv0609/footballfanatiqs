@@ -346,6 +346,65 @@ use Carbon\Carbon;
 
 <!-- Leagues Content Section End -->
 
+        <!-- Modal failure -->
+        <div class="alert-msg">
+            <div class="modal fade" id="errorModal2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+                tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-image">
+                                <div class="modal-failure-image modal-images-inner"></div>
+                            </div>
+                            <p id="error-message">
+                               
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="modal-btn btn btn-primary" data-bs-target="#exampleModalToggle2"
+                                data-bs-toggle="modal">Ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <!-- Modal Failure -->
+
+
+        <!-- Modal Success -->
+        <div class="alert-msg">
+            <div class="modal fade" id="exampleModalToggle1" aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel1" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalToggleLabel1">Modal 1</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-image">
+                                <div class="modal-success-image modal-images-inner"></div>
+                            </div>
+                            <p>
+                                You can add only 1-3 player.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="modal-btn btn btn-primary" data-bs-target="#exampleModalToggle1"
+                                data-bs-toggle="modal">Ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <!-- Modal Success -->
+
 @endsection
 
 @section('custom-script')
@@ -408,17 +467,17 @@ use Carbon\Carbon;
 
         $(document).on('click', '.player-toggle', function () {
 
-            var team_id = $(this).closest('tr').data('team-id');
-            var player_id = $(this).closest('tr').data('player-id');
-            var player_role = $(this).closest('tr').data('player-role');
+            var team_id = $(this).closest('li').data('team-id');
+            var player_id = $(this).closest('li').data('player-id');
+            var player_role = $(this).closest('li').data('player-role');
             var leagueId = "{{$matchDetails[0]->league->league_id}}";
-            var player_name = $(this).closest('tr').data('player-name');
-            var team_logo = $(this).closest('tr').data('team-logo');
-            var match_id = $(this).closest('tr').data('match-id');
-            var team_name = $(this).closest('tr').data('team-name');
-            var homeTeamId = $(this).closest('tr').data('home-team');
-            var awayTeamId = $(this).closest('tr').data('away-team');
-            var dbMatchId = $(this).closest('tr').data('slug-matchid');
+            var player_name = $(this).closest('li').data('player-name');
+            var team_logo = $(this).closest('li').data('team-logo');
+            var match_id = $(this).closest('li').data('match-id');
+            var team_name = $(this).closest('li').data('team-name');
+            var homeTeamId = $(this).closest('li').data('home-team');
+            var awayTeamId = $(this).closest('li').data('away-team');
+            var dbMatchId = $(this).closest('li').data('slug-matchid');
 
             var button = $(this); // Store reference to the clicked button
             var isPlus = button.hasClass('plus'); // Check if the clicked button is a "plus" button

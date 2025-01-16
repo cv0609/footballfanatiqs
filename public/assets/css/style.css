@@ -3505,11 +3505,11 @@ span.edit_pan i {
 }
 
 .modal-failure-image {
-    background-image: url(../images/modal-close.png);
+    background-image: url(/assets/images/modal-close.png);
 }
 
 .modal-success-image {
-    background-image: url(../images/modal-check.png);
+    background-image: url(/public/assets/images/modal-check.png);
 }
 
 .modal-btn {
