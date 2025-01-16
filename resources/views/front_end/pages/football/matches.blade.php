@@ -64,24 +64,27 @@
                             @php
                             $startSoonMatch = getMatchStatus($matche->fixture_date);
                             @endphp
-                        <li class="match-item">
+                        <li class="match-item matche-main" data-fixture-id="{{ $matche->id}}"
+                                data-league-id="{{$matches[0]->league->league_id}}"
+                                data-home-team="{{ $matche->home_team_id }}"
+                                data-away-team="{{ $matche->away_team_id }}">
                             <a href="matches-details">
                                 <div class="match-team match-width">
                                     <div class="match-team-inner">
-                                        <img src="assets/images/bundesliga-logo.jpg" class="lazy-load" alt="team-logo">
-                                        <h6>National Basketball Association</h6>
+                                        <img src="{{ $matche->home_team_logo }}" class="lazy-load" alt="team-logo">
+                                        <h6>{{ $matche->home_team_name }}</h6>
                                     </div>
 
                                 </div>
                                 <div class="match-info match-width mid">
-                                    <h6>Brooklyn Nets</h6>
-                                    <p>Brooklyn</p>
-                                    <span>3:00 PM</span>
+                                    <h6>{{$matche->venue_name}}</h6>
+                                    <p>{{$matche->venue_city}}</p>
+                                    <span>{{ date('Y-m-d h:i a',strtotime($matche->fixture_date))}}</span>
                                 </div>
                                 <div class="match-team match-width">
                                     <div class="match-team-inner">
-                                        <img src="assets/images/bundesliga-logo.jpg" class="lazy-load" alt="team-logo">
-                                        <h6>Maximum Basketball League</h6>
+                                        <img src="{{ $matche->away_team_logo }}" class="lazy-load" alt="team-logo">
+                                        <h6>{{ $matche->away_team_name }}</h6>
                                     </div>
 
                                 </div>
