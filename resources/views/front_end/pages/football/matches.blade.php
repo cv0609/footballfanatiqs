@@ -71,7 +71,7 @@
                             <a href="matches-details">
                                 <div class="match-team match-width">
                                     <div class="match-team-inner">
-                                        <img src="{{ $matche->home_team_logo }}" class="lazy-load" alt="team-logo">
+                                        <img src="{{ $matche->home_team_logo }}" data-src="{{ $matche->home_team_logo }} class="lazy-load" alt="team-logo">
                                         <h6>{{ $matche->home_team_name }}</h6>
                                     </div>
 
@@ -83,7 +83,7 @@
                                 </div>
                                 <div class="match-team match-width">
                                     <div class="match-team-inner">
-                                        <img src="{{ $matche->away_team_logo }}" class="lazy-load" alt="team-logo">
+                                        <img src="{{ $matche->away_team_logo }}" data-src="{{ $matche->away_team_logo }}" class="lazy-load" alt="team-logo">
                                         <h6>{{ $matche->away_team_name }}</h6>
                                     </div>
 
