@@ -1,4 +1,5 @@
 @extends('front_end.layout.main')
+@section('title','Register')
 @section('content')
 <!-- Register Page Form Section Start -->
 <section class="login_signup_form">
