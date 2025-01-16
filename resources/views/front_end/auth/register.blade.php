@@ -45,7 +45,10 @@
                     </fieldset>
                     <fieldset>
                     <button type="submit" class="signup" type="button">Create Account</button>
-                    </fieldset>                                    
+                    </fieldset> 
+                    <p class="jump-text">
+                            Already have an account? <a href="{{ route('login') }}">Login</a>
+                        </p>                                   
                 </form>
 
             </div>
