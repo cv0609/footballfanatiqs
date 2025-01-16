@@ -16,8 +16,8 @@
                         <fieldset>
                             <input placeholder="Enter Your Email" type="email" tabindex="1" name="email">
                             @error('email')
-                     <span class="text-danger">{{ $message }}</span>
-                    @enderror
+                            <span class="text-danger">{{ $message }}</span>
+                            @enderror
                         </fieldset>
                         <fieldset>
                             <input placeholder="Enter Password" type="password" tabindex="2" name="password">

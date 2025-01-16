@@ -95,10 +95,18 @@
                     </div>
 
                     <div id="login-form">
-                        <form>
-                            <input type="text" placeholder="Enter Email or Username">
-                            <input type="password" placeholder="Enter Password">
-                            <button type="button" class="btn login">login</button>                            
+                        <form action="{{ route('login.post') }}" method="POST">
+                    @csrf
+
+                            <input type="email" placeholder="Enter Email or Username" name="email">
+                            @error('email')
+                            <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                            <input type="password" placeholder="Enter Password" name="password">
+                            @error('password')
+                         <span class="text-danger">{{ $message }}</span>
+                        @enderror
+                            <button type="submit" class="btn login">login</button>                            
                                                    </form>
                     </div>
 
