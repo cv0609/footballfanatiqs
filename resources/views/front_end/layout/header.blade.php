@@ -73,7 +73,7 @@
                    <ul>
                        <li><a class="{{ Route::currentRouteName() == 'home' ? 'active-link' : '' }}" href="{{ route('home') }}">Homepage</a></li>
                        <li><a class="{{ Route::currentRouteName() == 'how.to.play' ? 'active-link' : '' }}" href="{{ route('how.to.play') }}">Playing Guide</a></li>
-                       <li><a href="leagues" class="active">Play now</a></li>
+                       <li><a href="{{ route('leagues') }}" class="active">Play now</a></li>
                        <li><a href="{{ route('about.us') }}" class="{{ Route::currentRouteName() == 'about.us' ? 'active-link' : '' }}">About Us</a></li>
                        <li><a href="{{ route('contact.us') }}" class="{{ Route::currentRouteName() == 'contact.us' ? 'active-link' : '' }}">Contact Us</a></li>
                    </ul>

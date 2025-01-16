@@ -8,7 +8,7 @@
                 <div class="banner_box">
                     <h1>Play Football Fanatiqs Today!</h1>
                     <p>Join The Action</p>
-                    <a href="leagues" class="butn home_leagues_btn">Play Now</a>
+                    <a href="{{ route('leagues') }}" class="butn home_leagues_btn">Play Now</a>
                 </div>
             </div>
         </div>
