@@ -3476,3 +3476,70 @@ span.edit_pan i {
     color: var(--primary-color);
     border-color: #fff;
 }
+
+
+/* Modal CSS Start */
+.modal-body p {
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+}
+
+.modal-footer {
+    justify-content: center;
+}
+
+.modal-image {
+    height: 100px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.modal-images-inner {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.modal-failure-image {
+    background-image: url(../images/modal-close.png);
+}
+
+.modal-success-image {
+    background-image: url(../images/modal-check.png);
+}
+
+.modal-btn {
+    color: #fff;
+    background-color: #ea592e;
+    border: none;
+    padding: 11px 30px !important;
+    width: auto;
+    font-size: 17px;
+    font-weight: 600;
+    border: 1px solid #ea592e;
+    transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -ms-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+}
+
+.modal-btn:hover {
+    background-color: #fff;
+    border: 1px solid #ea592e;
+    color: #000;
+}
+
+.modal-header {
+    border-bottom: 1px solid #ea592e;
+}
+
+.modal-footer {
+    border-top: 1px solid #ea592e;
+}
+
+/* Modal CSS Start */

@@ -336,6 +336,7 @@ use Carbon\Carbon;
         </div>
       <!-- alert-msg popup end -->
 <!-- Leagues Content Section End -->
+ 
 @endsection
 
 @section('custom-script')

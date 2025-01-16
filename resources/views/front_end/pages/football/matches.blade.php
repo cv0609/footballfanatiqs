@@ -68,7 +68,7 @@
                                 data-league-id="{{$matches[0]->league->league_id}}"
                                 data-home-team="{{ $matche->home_team_id }}"
                                 data-away-team="{{ $matche->away_team_id }}">
-                            <a href="matches-details">
+                            <a href="javascript:void">
                                 <div class="match-team match-width">
                                     <div class="match-team-inner">
                                         <img src="{{ $matche->home_team_logo }}" data-src="{{ $matche->home_team_logo }} class="lazy-load" alt="team-logo">
