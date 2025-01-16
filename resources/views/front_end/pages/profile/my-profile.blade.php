@@ -31,26 +31,28 @@
                     <div class="">
                         <div class="tab-content tab-content-1 active">
                             <div class="user-content-box">
-                                <form action="#" method="POST">
+                                <form action="{{ route('profile.update') }}" method="POST">
+                                @csrf
+
                                     <div class="row">
                                         <div class="mb-3">
                                             <input type="text" placeholder="Name" class="form-control para" id="name"
-                                                required="required" autocomplete="off">
+                                            name="first_name" value="{{ Auth::user()->first_name }}" autocomplete="off">
                                         </div>
-                                        <div class="mb-3">
+                                        <!-- <div class="mb-3">
                                             <input type="text" placeholder="Username" class="form-control para"
                                                 id="username" required="required" autocomplete="off">
-                                        </div>
+                                        </div> -->
                                         <div class="mb-3">
                                             <input type="email" placeholder="E-mail" class="form-control para"
-                                                id="email" required="required" autocomplete="off">
+                                                id="email" name="email" autocomplete="off" value="{{ Auth::user()->email  }}" autocomplete="off">
                                         </div>
                                         <div class="mb-3">
                                             <input type="tel" placeholder="Phone Number" class="form-control para"
-                                                id="Phone" required="required" autocomplete="off">
+                                                id="Phone" name="phone" autocomplete="off" value="{{ Auth::user()->phone  }}" autocomplete="off">
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-primary">Update</button>
+                                    <button type="submit" class="btn btn-primary">Update</button>
 
                                 </form>
                             </div>
