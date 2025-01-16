@@ -96,8 +96,8 @@
 
                     <div id="login-form">
                         <form>
-                            <input type="text" placeholder="Enter Email or Username">
-                            <input type="password" placeholder="Enter Password">
+                            <input type="text" placeholder="Enter Your Email">
+                            <input type="password" placeholder="Enter Your Password">
                             <button type="button" class="btn login">login</button>                            
                                                    </form>
                     </div>
@@ -105,11 +105,11 @@
                     <div id="signup-form">
                         <form action="{{ route('register.post') }}" method="POST">
                             @csrf
-                            <input type="email" placeholder="Enter Your email" name="email" value="{{ old('email') }}">
+                            <input type="email" placeholder="Enter Your Email" name="email" value="{{ old('email') }}">
                             @error('email')
                             <span class="text-danger">{{ $message }}</span>
                             @enderror
-                            <input type="text" placeholder="Enter Name" name="first_name" 
+                            <input type="text" placeholder="Enter Your Username" name="first_name" 
                             id="first_name" value="{{ old('first_name') }}">
                             @error('first_name')
                             <span class="text-danger">{{ $message }}</span>
