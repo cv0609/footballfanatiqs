@@ -15,26 +15,32 @@
                     @csrf
                     <h3 class="text-center">Register</h3>
                     <fieldset>
-                    <input type="email"  placeholder="Enter Your Email" name="email" value="{{ old('email') }}" />
+                    <input type="email"  placeholder="Enter Your Email" name="email" value="{{ old('email') }}">
                     @error('email')
                     <span class="text-danger">{{ $message }}</span>
                     @enderror
                     </fieldset>
                     <fieldset>
                     <input type="text" placeholder="Choose Name" name="first_name" 
-                        id="first_name" value="{{ old('first_name') }}" />
+                        id="first_name" value="{{ old('first_name') }}">
                     @error('first_name')
                     <span class="text-danger">{{ $message }}</span>
                     @enderror
                     </fieldset>
                     <fieldset>
-                    <input type="password"   placeholder="Enter Password" id="password-field" name="password" />
+                    <input type="text" placeholder="Enter Phone Number (Optional)" name="phone" 
+                        id="phone">                 
+                    <span class="text-danger">{{ $message }}</span>
+                    @enderror
+                    </fieldset>
+                    <fieldset>
+                    <input type="password"   placeholder="Enter Password" id="password-field" name="password">
                     @error('password')
                     <span class="text-danger">{{ $message }}</span>
                     @enderror
                     </fieldset>
                     <fieldset>
-                    <input type="password"  placeholder="Re-Enter Password" id="password-field" name="password_confirmation" />
+                    <input type="password"  placeholder="Re-Enter Password" id="password-field" name="password_confirmation">
                     </fieldset>
                     <fieldset>
                     <button type="submit" class="signup" type="button">Create Account</button>
