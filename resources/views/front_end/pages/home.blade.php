@@ -103,13 +103,28 @@
                     </div>
 
                     <div id="signup-form">
-                        <form>
-                            <input type="email" placeholder="Enter Your email" >
-                            <input type="text" placeholder="Enter Username">
-                            <input type="text" placeholder="Enter Phone Number (Optional)">
-                            <input type="password" placeholder="Enter Password">
+                        <form action="{{ route('register.post') }}" method="POST">
+                            @csrf
+                            <input type="email" placeholder="Enter Your email" name="email" value="{{ old('email') }}">
+                            @error('email')
+                            <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                            <input type="text" placeholder="Enter Name" name="first_name" 
+                            id="first_name" value="{{ old('first_name') }}">
+                            @error('first_name')
+                            <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                            <input type="text" placeholder="Enter Phone Number (Optional)" name="phone" 
+                            id="phone" value="{{ old('phone') }}">
+                            @error('phone')
+                            <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                            <input type="password" placeholder="Enter Password" name="password">
+                            @error('password')
+                            <span class="text-danger">{{ $message }}</span>
+                            @enderror
                             <input type="password" placeholder="Re-Enter Password">
-                            <button type="button" class="btn signup">create account</button>                        
+                            <button type="submit" class="btn signup">create account</button>                        
                             <hr />
                         </form>
                     </div>

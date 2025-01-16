@@ -41,7 +41,7 @@ class AuthController extends Controller
         $user->first_name = $request->input('first_name');
         // $user->last_name = $request->input('last_name');
         $user->email = $request->input('email');
-        // $user->phone = $request->input('phone');
+        $user->phone = $request->input('phone');
         $user->password = Hash::make($request->input('password')); // Hash the password
         $user->save();
 
@@ -52,7 +52,7 @@ class AuthController extends Controller
                 // 'last_name' => $request->input('last_name'),
                 'email' => $request->input('email'),
                 'password' => $request->input('password'),
-                // 'phone' => $request->input('phone')
+                'phone' => $request->input('phone')
             ];
 
             //Mail::to($request->input('email'))->send(new UserRegisterMail($user));
