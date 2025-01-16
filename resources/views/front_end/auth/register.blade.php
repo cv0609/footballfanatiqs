@@ -22,7 +22,7 @@
                     @enderror
                     </fieldset>
                     <fieldset>
-                    <input type="text" placeholder="Choose Name" name="first_name" 
+                    <input type="text" placeholder="Enter Your Username" name="first_name" 
                         id="first_name" value="{{ old('first_name') }}">
                     @error('first_name')
                     <span class="text-danger">{{ $message }}</span>

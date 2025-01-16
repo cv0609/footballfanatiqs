@@ -113,11 +113,11 @@
                     <div id="signup-form">
                         <form action="{{ route('register.post') }}" method="POST">
                             @csrf
-                            <input type="email" placeholder="Enter Your email" name="email" value="{{ old('email') }}">
+                            <input type="email" placeholder="Enter Your Email" name="email" value="{{ old('email') }}">
                             @error('email')
                             <span class="text-danger">{{ $message }}</span>
                             @enderror
-                            <input type="text" placeholder="Enter Name" name="first_name" 
+                            <input type="text" placeholder="Enter Your Username" name="first_name" 
                             id="first_name" value="{{ old('first_name') }}">
                             @error('first_name')
                             <span class="text-danger">{{ $message }}</span>
