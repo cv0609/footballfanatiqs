@@ -1601,9 +1601,8 @@ h3 {
 
 #login-signup input,
 #login-signup textarea,
-#login-signup button[type="submit"] {
+#login-signup button {
     font-family: "Work Sans", sans-serif;
-    color: #000;
 }
 
 #login-signup {

@@ -96,22 +96,20 @@
 
                     <div id="login-form">
                         <form>
-                            <input type="text" placeholder="Enter email or username" />
-                            <input type="password" placeholder="Enter password" />
-                            <button type="button" class="btn login">login</button>
-                            <p><a href="javascript:void(0)">Forgotten account</a></p>
-                            <hr />
-                        </form>
+                            <input type="text" placeholder="Enter Email or Username">
+                            <input type="password" placeholder="Enter Password">
+                            <button type="button" class="btn login">login</button>                            
+                                                   </form>
                     </div>
 
                     <div id="signup-form">
                         <form>
-                            <input type="email" placeholder="Enter your email" />
-                            <input type="text" placeholder="Choose username" />
-                            <input type="password" placeholder="Create password" />
-                            <button type="button" class="btn signup">create account</button>
-                            <p>Clicking <strong>create account</strong> means that you are agree to our <a
-                                    href="javascript:void(0)">terms of services</a>.</p>
+                            <input type="email" placeholder="Enter Your email" >
+                            <input type="text" placeholder="Enter Username">
+                            <input type="text" placeholder="Enter Phone Number (Optional)">
+                            <input type="password" placeholder="Enter Password">
+                            <input type="password" placeholder="Re-Enter Password">
+                            <button type="button" class="btn signup">create account</button>                        
                             <hr />
                         </form>
                     </div>

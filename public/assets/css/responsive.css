@@ -145,7 +145,7 @@
         width: 220px;
     }
 
-    #login-signup button[type="submit"] {
+    #login-signup button {
         font-size: 18px;
     }
 

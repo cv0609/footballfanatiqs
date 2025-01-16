@@ -1,6 +1,6 @@
 @extends('front_end.layout.main')
 @section('content')
-<!-- Login Page Form Section Start -->
+<!-- Register Page Form Section Start -->
 <section class="login_signup_form">
     <div class="container">
         <div class="login-signup-wrapper">
@@ -11,33 +11,39 @@
                 @if(Session::has('error'))
                 <span class="alert alert-danger text-center">{{ Session::get('error') }}</span>
                 @endif
-                <form action="{{ route('register.post') }}" method="POST">
+                <form action="{{ route('register.post') }}" method="POST" id="login-signup">
                     @csrf
-
-                    <input type="email" class="form-control para" placeholder="Enter your email" name="email" value="{{ old('email') }}" />
+                    <h3 class="text-center">Register</h3>
+                    <fieldset>
+                    <input type="email"  placeholder="Enter Your Email" name="email" value="{{ old('email') }}" />
                     @error('email')
                     <span class="text-danger">{{ $message }}</span>
                     @enderror
-                    <input type="text" placeholder="Choose name" name="first_name" class="form-control para"
+                    </fieldset>
+                    <fieldset>
+                    <input type="text" placeholder="Choose Name" name="first_name" 
                         id="first_name" value="{{ old('first_name') }}" />
                     @error('first_name')
                     <span class="text-danger">{{ $message }}</span>
                     @enderror
-                    <input type="password"  class="form-control para" placeholder="Create password" id="password-field" name="password" />
+                    </fieldset>
+                    <fieldset>
+                    <input type="password"   placeholder="Enter Password" id="password-field" name="password" />
                     @error('password')
                     <span class="text-danger">{{ $message }}</span>
                     @enderror
-                    <input type="password"  class="form-control para" placeholder="Confirm password" id="password-field" name="password_confirmation" />
-                   
-                    <button type="submit" class="btn signup">create account</button>
-                    <p>Clicking <strong>create account</strong> means that you are agree to our <a
-                            href="javascript:void(0)">terms of services</a>.</p>
-                    <hr />
+                    </fieldset>
+                    <fieldset>
+                    <input type="password"  placeholder="Re-Enter Password" id="password-field" name="password_confirmation" />
+                    </fieldset>
+                    <fieldset>
+                    <button type="submit" class="signup" type="button">Create Account</button>
+                    </fieldset>                                    
                 </form>
 
             </div>
         </div>
     </div>
 </section>
-<!-- Login Page Form Section End -->
+<!-- Register Page Form Section End -->
 @endsection

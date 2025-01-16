@@ -14,7 +14,7 @@
                         <span class="alert alert-danger">{{ Session::get('error') }}</span>
                     @endif
                         <fieldset>
-                            <input placeholder="Enter Your Email" type="email" tabindex="1" name="email" autofocus>
+                            <input placeholder="Enter Your Email" type="email" tabindex="1" name="email">
                             @error('email')
                      <span class="text-danger">{{ $message }}</span>
                     @enderror
@@ -26,7 +26,7 @@
                         @enderror
                         </fieldset>
                         <fieldset>
-                            <button name="submit" type="submit" id="login-submit" data-submit="...Sending">
+                            <button name="submit" type="button" id="login-submit" data-submit="...Sending">
                                 LOGIN</button>
                         </fieldset>
                         <p class="jump-text">
