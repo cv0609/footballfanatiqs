@@ -2,8 +2,6 @@
     .football_banner_right {
         height: 600px;
     }
-
-
 }
 
 
@@ -16,7 +14,7 @@
         width: 100%;
         padding: 50px;
         background-color: var(--secondary-color);
-        transform: translateX(100%);
+        transform: translateX(-100%);
         transition: all 0.3s linear;
         z-index: 100;
         color: #fff;
@@ -53,8 +51,9 @@
 
     .signup-btn,
     .login-btn {
-        margin-left: 0;
+        margin-left: 10px !important;
     }
+   
 
     .btn {
         max-width: 150px;
@@ -335,6 +334,53 @@
     section.our_about {
         padding: 40px 0;
     }
+    .leagues .fanatiqs_leagues-inner {
+        overflow-x: scroll;
+    }
+     .leagues-list {
+        padding: 1.5rem;
+    
+    }
+    .leagues .leagues-list {
+        min-width: 700px;
+    }
+    .matches .basket_leagues-inner-content {
+        overflow-x: scroll;
+    }
+    .matches .matches-list {
+        min-width: 700px;
+    }
+    .matches .team-logo {
+        padding: 10px 30px;
+    }
+    .matches-details .fanatiqs_leagues-inner {
+        overflow-x: scroll;
+    }
+    .overflow{
+        overflow-x: scroll;
+    }
+    .matches-details .leagues-list {
+        min-width: 700px;
+    }
+    .matches-details .team-logo {
+        margin-top: -40px;
+    }
+    .matches-details .fanatiqs_leagues-inner h2{
+        min-width: 700px;
+    }
+    .team-view-page .fanatiqs_leagues-inner {
+        overflow-x: scroll;
+    }
+    .team-view-page .leagues-list {
+        min-width: 700px;
+    }
+    .fanatiqs_leagues-inner h2{
+        min-width: 700px;
+    }
+    .team-btns {
+        min-width: 700px;
+    }
+  
 }
 
 
@@ -432,6 +478,12 @@
     .custom-blog-card-content p {
         font-size: 15px;
     }
+    .toggle-target a{
+        width: 50%;
+    }
+    .toggle-target a {
+        font-size: 14px;
+    }
 
     .toggle-button {
         font-size: 15px;
@@ -508,6 +560,12 @@
     .step p {
         font-size: 15px;
     }
+    .top_notch {
+        flex-direction: column;
+    }
+    .login {
+        margin: 10px auto;
+    }
 }
 
 
@@ -521,6 +579,9 @@
 
     footer.footer.py-5 {
         padding-top: 0;
+    }
+    .toggle-target a {
+        font-size: 12px;
     }
 
     .footer-blocks {
@@ -657,10 +718,7 @@
         font-size: 14px;
     }
 
-    #contact input[type="text"],
-    #contact input[type="email"],
-    #contact input[type="tel"],
-    #contact input[type="url"],
+    #contact input,
     #contact textarea,
     #contact select {
         font-size: 14px;
@@ -705,5 +763,8 @@
 
     .how_play_image {
         height: 200px;
+    }
+    .banner_box h1 {
+        font-size: 30px;
     }
 }

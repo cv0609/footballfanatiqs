@@ -19,7 +19,7 @@
 <section class="game_mode">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6">
                 <div class="game_inner">
                     <div class="img_box" style="background-image: url(assets/images/classic.png);"></div>
                     <h2>
@@ -28,7 +28,7 @@
                     <p>Build a team with a budget and compete for points all season.</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6">
                 <div class="game_inner">
                     <div class="img_box" style="background-image: url(assets/images/draft.png);"></div>
                     <h2>
@@ -37,7 +37,7 @@
                     <p>Take turns drafting unique players; trade and manage waivers.</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6">
                 <div class="game_inner">
                     <div class="img_box" style="background-image: url(assets/images/fantasy.png);"></div>
                     <h2>
@@ -46,7 +46,7 @@
                     <p>Pick teams for single matchdays with results resetting weekly.</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6">
                 <div class="game_inner">
                     <div class="img_box" style="background-image: url(assets/images/head.png);"></div>
                     <h2>
@@ -55,7 +55,7 @@
                     <p>Face a different opponent each week, with playoffs for top teams.</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6">
                 <div class="game_inner">
                     <div class="img_box" style="background-image: url(assets/images/player.png);"></div>
                     <h2>
@@ -64,7 +64,7 @@
                     <p>Build teams under a dynamic budget; balance stars and value picks.</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6">
                 <div class="game_inner">
                     <div class="img_box" style="background-image: url(assets/images/saviour.png);"></div>
                     <h2>

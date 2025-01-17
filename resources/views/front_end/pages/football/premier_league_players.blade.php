@@ -43,6 +43,7 @@ use Carbon\Carbon;
                 </a>
             </div>
             <h2 class="text-center">Saison {{ (date('Y') - 1).'-'.date('Y') }}</h2>
+            <div class="overflow">
             <div class="leagues-list">
                 <div class="plyr-hedr">
                     <div class="team-logo">
@@ -335,6 +336,7 @@ use Carbon\Carbon;
                     </div>
 
                 </div>
+            </div>
             </div>
             <div class="team-btns text-center">
                 <a href="{{ route('my-team') }}" class="next-btn">Next</a>

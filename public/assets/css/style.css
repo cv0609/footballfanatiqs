@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 /* Global CSS Start */
 
 * {
@@ -214,7 +214,13 @@ img {
     background: var(--secondary-color);
     padding: 10px;
 }
-
+.login {
+    display: inline-flex;
+}
+.login .btn {
+    width: auto;
+    margin-bottom: 0;
+}
 .temail a {
     color: var(--secondary-color);
     display: flex;
@@ -357,7 +363,7 @@ header.header-container {
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 100px;
+    height: 80px;
     width: 350px;
 }
 
@@ -597,7 +603,7 @@ section.game_mode .row {
     position: relative;
     max-width: 700px;
     height: auto;
-    margin-top: 4em;
+    margin-top: 2em;
     left: 50%;
     transform: translateX(-50%);
     background: var(--secondary-color);
@@ -637,11 +643,15 @@ section.form_modal {
     margin-bottom: 0.5em;
     margin-top: 0.5em;
 }
+.form-set button {
+    margin-left: 0;
+}
 
 .form-set .login,
 .form-set .signup {
     background: var(--primary-color);
     color: var(--secondary-color) !important;
+    max-width: 550px;
 }
 
 .form-set .login:hover,
@@ -658,8 +668,8 @@ section.form_modal {
 .form-toggle button {
     width: 50%;
     float: left;
-    padding: 1.5em;
-    margin-bottom: 1.5em;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
     border: none;
     transition: 0.2s;
     font-size: 1.1em;
@@ -683,10 +693,14 @@ section.form_modal {
 
 .form-set form {
     position: relative;
-    width: 90%;
+    width: 100%;
     height: auto;
     left: 50%;
     transform: translateX(-50%);
+}
+.form-set input {
+    max-width: 550px !important;
+    width: 100% !important;
 }
 
 #login-form,
@@ -786,7 +800,7 @@ section.form_modal {
 
 .logo-bottom a {
     text-align: center;
-    height: 100px;
+    height: 80px;
     width: 350px;
     vertical-align: middle;
     display: inline-block;
@@ -799,6 +813,9 @@ section.form_modal {
 .footer-blocks {
     width: 30%;
     padding: 15px;
+}
+.footer-blocks:last-child {
+    margin-bottom: 0;
 }
 
 .footer-blocks h3 {
@@ -1393,6 +1410,7 @@ section.our_about {
 
 .about_us {
     background-image: url(../images/aboutbanner.jpg);
+    background-position: center bottom;
 }
 
 .img_about {
@@ -1590,6 +1608,11 @@ h3 {
     padding: 60px 0 100px 0;
     background: #fafafa;
     background-blend-mode: multiply;
+    position: relative;
+    background-image: url(../images/login-signup-page-bg.jpg);
+    background-color: rgba(0 0 0/40%);
+    background-position: center;
+    background-size: cover;
 }
 
 .form-container {
@@ -2198,7 +2221,7 @@ fieldset {
 }
 
 .matches-list li .match-team:last-child {
-    justify-content: flex-end;
+    justify-content: flex-end !important;
 }
 
 .matches-list li .match-team h6 {
@@ -2349,6 +2372,10 @@ td.match-score h4 {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid var(--secondary-color);
+    flex-wrap: wrap;
+}
+.plyr-hedr .team-logo h6 {
+    text-align: center;
 }
 
 .matches-details .matches-list {
@@ -2441,7 +2468,7 @@ a.tab.active {
 
 .matches-list .fanatiqs-table li.match-item .match-width:last-child {
     position: absolute;
-    right: -80px;
+    right: -8%;
     top: 54%;
     transform: translateY(-50%);
 }
@@ -2454,7 +2481,9 @@ a.tab.active {
     padding: 10px 50px;
     border-radius: 10px;
 }
-
+.team-logo h6 {
+    text-align: center;
+}
 .cen_mid h6 {
     color: #fff;
 }
@@ -2463,7 +2492,7 @@ a.tab.active {
     width: 41px;
 }
 
-button.plus.player-toggle {
+button.player-toggle {
     border: none;
     display: flex;
     justify-content: center;
@@ -2480,7 +2509,7 @@ button.plus.player-toggle {
 }
 
 
-button.plus.player-toggle i {
+button.player-toggle i {
     color: var(--secondary-color);
 }
 
@@ -2972,7 +3001,7 @@ ul.team-list li:hover p.match-position {
     left: 0;
     top: 120%;
     display: none;
-    z-index: 9;
+    z-index: 999;
 }
 
 .profile-image {
@@ -3503,13 +3532,24 @@ span.edit_pan i {
     width: 100px;
     margin: 0 auto;
 }
-
+.modal-title{
+    display: none;
+}
+.modal-footer {
+    justify-content: center;
+}
+.modal-footer .modal-btn {
+    background: #3138a0;
+    padding: 10px 20px !important;
+    border-radius: 5px;
+    color: #fff !important;
+}
 .modal-failure-image {
-    background-image: url(/assets/images/modal-close.png);
+    background-image: url(../images/modal-close.png);
 }
 
 .modal-success-image {
-    background-image: url(/public/assets/images/modal-check.png);
+    background-image: url(../images/modal-check.png);
 }
 
 .modal-btn {
@@ -3543,3 +3583,15 @@ span.edit_pan i {
 }
 
 /* Modal CSS Start */
+
+
+
+/* Fixes */
+span.alert {
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    min-width: 280px;
+    padding: 5px;
+    transform: translateX(-50%);
+}
