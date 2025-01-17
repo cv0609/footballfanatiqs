@@ -109,7 +109,7 @@ community of fans. That’s why we focus on:
 
 </section>
 <!-- football section end -->
-<section class="our_about1">
+<div class="our_about1">
    <div class="container">
 <div class="our_abt1">
     <div class="row">
@@ -188,7 +188,7 @@ community of fans. That’s why we focus on:
     </div>
 </div>
    </div>                
-</section>
+</div>
 
 
 

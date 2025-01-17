@@ -80,16 +80,69 @@
                 <div class="faq-content">
                     <p>Football Fanatiqs offers multiple game modes to keep the experience fresh and exciting.
                         Choose the one that suits your playstyle:</p>
+                        <p>
+                            <strong>
+                            Classic Mode (Season-Long)
+                            </strong>
+                        </p>
                     <ul>
-                        <li><strong>Classic Mode (Season-Long):</strong> Build a squad within a set budget and earn
-                            points based on player performances over the course of the season.</li>
-                        <li><strong>Draft Mode:</strong> Participate in a live draft where managers take turns
-                            selecting players.</li>
-                        <li><strong>Daily Fantasy Soccer:</strong> Choose a team for a single day or matchweek.</li>
-                        <li><strong>Head-to-Head Leagues:</strong> Compete against another manager each week.</li>
-                        <li><strong>Salary Cap Challenge:</strong> Build your team under a strict salary cap.</li>
-                        <li><strong>Survivor Mode (Knockout):</strong> Avoid being the lowest scorer in your league
-                            each week to stay in the game.</li>
+                        <li> Build a squad within a set budget and earn points based on player performances
+                        over the course of the season.</li>
+                        <li>Make transfers each week to improve your team, but stay mindful of penalties for
+                        exceeding limits.</li>
+                        <li>Compete to climb the leaderboard by scoring the most points overall.
+                        </li>                   
+                    </ul>
+                    <p>
+                            <strong>
+                            Daily Fantasy Soccer
+                            </strong>
+                        </p>
+                    <ul>
+                        <li> Choose a team for a single day or matchweek.
+                        </li>
+                        <li>Points reset after each round, allowing you to compete in short-term challenges
+                        without season-long commitments.</li>                                          
+                    </ul>
+                    <p>
+                            <strong>
+                            Head-to-Head Leagues
+                            </strong>
+                        </p>
+                    <ul>
+                        <li> Compete against another manager each week.
+                        </li>
+                        <li> Points determine winners, and standings are updated based on win/loss records.</li>    
+                        <li> Playoffs or finals at the end of the season crown the ultimate champion.</li>                                       
+                    </ul>
+
+                    <p>
+                            <strong>
+                            Salary Cap Challenge
+                            </strong>
+                        </p>
+                    <ul>
+                        <li> Build your team under a strict salary cap. Player values change dynamically based
+                        on performance and popularity.
+                        </li>
+                        <li> The challenge lies in balancing superstars with undervalued players for maximum
+                           efficiency.
+                          </li>   
+                                                
+                    </ul>
+
+                    
+                    <p>
+                            <strong>
+                            Survivor Mode (Knockout)
+                            </strong>
+                        </p>
+                    <ul>
+                        <li> Avoid being the lowest scorer in your league each week to stay in the game.
+                        </li>
+                        <li> The lowest-scoring team is eliminated until one winner remains.
+                          </li>   
+                                                
                     </ul>
 
                 </div>
@@ -101,13 +154,55 @@
                     <span class="faq-icon">&#9660;</span>
                 </div>
                 <div class="faq-content">
-                    <p>Based on your chosen mode, either participate in a live draft or select players from a pool
-                        within your budget. Assemble a team with a goalkeeper, defenders, midfielders, and forwards.
-                        Ensure you meet any minimum or maximum player requirements for each position.</p>
-                    <p><strong>Assign a Captain:</strong> Designate a captain to earn double points for their
-                        performance.</p>
-                    <p><strong>Bench Players:</strong> Plan your bench strategically to cover for injuries or poor
-                        performances.</p>
+                    <p>
+                        <strong>
+                        1. Draft or Select Players:
+                        </strong>
+                    </p>
+                    <ul>
+                        <li>
+                        Based on your chosen mode, either participate in a live draft or select players
+                        from a pool within your budget.
+                        </li>
+                    </ul>
+                    <p>
+                        <strong>
+                        2. Fill Required Positions:
+                        </strong>
+                    </p>
+                    <ul>
+                        <li>
+                        Assemble a team with a goalkeeper, defenders, midfielders, and forwards.
+                       Ensure you meet any minimum or maximum player requirements for each
+                       position.
+                        </li>
+                    </ul>
+                    <p>
+                        <strong>
+                        3. Assign a Captain:
+                        </strong>
+                    </p>
+                    <ul>
+                        <li>
+                        Designate a captain to earn double points for their performance. Choose
+                        wisely!
+                        </li>
+                    </ul>
+                    <p>
+                        <strong>
+                        4. Bench Players:
+                        </strong>
+                    </p>
+                    <ul>
+                        <li>
+                        Some modes allow for substitutes. Plan your bench strategically to cover for
+                        injuries or poor performances.
+                        </li>
+                    </ul>
+
+
+
+              
 
                 </div>
             </div>

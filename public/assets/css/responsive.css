@@ -387,7 +387,7 @@
         min-width: 700px;
     }
     .leagues-list {
-        padding: 1.5rem;
+        padding: 0.5rem;
     }
     .match-details .leagues-list {
         min-width: 700px;
@@ -581,6 +581,9 @@
     .avatar-content {
         justify-content: center;
         margin-top: 15px;
+    }
+    .match-details.team-logo {
+        padding: 10px 20px;
     }
 }
 
