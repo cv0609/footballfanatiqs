@@ -128,7 +128,7 @@
                                         @enderror
                                 </fieldset>
                                 <fieldset>
-                                    <textarea name="message" class="message" placeholder="Message" id="message" name="message"
+                                    <textarea  class="message" placeholder="Message" id="message" name="message"
                                         minlength="10" maxlength="1000">{{ old('message') }}</textarea>
                                         @error('message')
                                          <span class="text-danger">{{ $message }}</span>

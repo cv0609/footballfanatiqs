@@ -21,7 +21,7 @@
                                <div class="avatar-content">
                                    <a href="#">
                                        <div class="profile-image">
-                                       <img src="{{(!empty(Auth::user()->image)) ? asset(Auth::user()->image) : asset('assets/images/dummy.jpg') }}" alt="dp">
+                                       <img src="{{(!empty(Auth::user()->image)) ? asset(Auth::user()->image) : asset('assets/images/dummy.png') }}" alt="dp">
                                        </div>
                                        <span>{{ ucfirst(Auth::user()->first_name.' '.Auth::user()->last_name) }}</span>
                                    </a>
@@ -71,7 +71,7 @@
 
                <div class="navbar-menu">
                    <ul>
-                       <li><a class="{{ Route::currentRouteName() == 'home' ? 'active-link' : '' }}" href="{{ route('home') }}">Homepage</a></li>
+                       <li><a class="{{ Route::currentRouteName() == 'home' ? 'active-link' : '' }}" href="{{ route('home') }}">Home</a></li>
                        <li><a class="{{ Route::currentRouteName() == 'how.to.play' ? 'active-link' : '' }}" href="{{ route('how.to.play') }}">Playing Guide</a></li>
                        <li><a href="{{ route('leagues') }}" class="active">Play now</a></li>
                        <li><a href="{{ route('about.us') }}" class="{{ Route::currentRouteName() == 'about.us' ? 'active-link' : '' }}">About Us</a></li>

@@ -42,10 +42,10 @@
                     @enderror
                     </fieldset>
                     <fieldset>
-                    <input type="password"  placeholder="Re-Enter Password" id="password-field" name="password_confirmation">
+                    <input type="password"  placeholder="Re-Enter Password" id="password-field1" name="password_confirmation">
                     </fieldset>
                     <fieldset>
-                    <button type="submit" class="signup" type="button">Create Account</button>
+                    <button type="submit" class="signup">Create Account</button>
                     </fieldset> 
                     <p class="jump-text">
                             Already have an account? <a href="{{ route('login') }}">Login</a>

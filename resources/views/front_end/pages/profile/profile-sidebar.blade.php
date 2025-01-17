@@ -3,7 +3,7 @@
         <div class="user-img">
             <div class="update_img_user">
                 <div class="update_img_user_img">
-                <img src="{{(!empty(Auth::user()->image)) ? asset(Auth::user()->image) : asset('assets/images/dummy.jpg') }}" alt="user_img">
+                <img src="{{(!empty(Auth::user()->image)) ? asset(Auth::user()->image) : asset('assets/images/dummy.png') }}" alt="user_img">
                 </div>
                 <form action="{{ route('profile.update-pic') }}" method="POST" enctype="multipart/form-data" id="profile-pic-form">
                 @csrf

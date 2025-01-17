@@ -15,6 +15,18 @@
 </div>
 <!--Playing Guide Banner Section End -->
 
+<!-- Playing Guide intro Section Start -->
+<div class="playing-guide_intro py-5">
+    <div class="container">
+        <p class="text-center">
+        Football Fanatiqs is your gateway to managing your dream soccer team while competing
+        with friends and fans around the world. Whether you’re a seasoned fantasy player or a
+        beginner, this guide will walk you through everything you need to know.
+        </p>
+    </div>
+</div>
+<!-- Playing Guide intro Section End -->
+
 <!-- Playing Guide Content Section Start -->
 
 <section class="sect_faq">
@@ -193,18 +205,17 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="dis_text">
-                    <p>Gaimedays is a platform designed for entertainment purposes only and is intended for
-                        individuals aged 18 and over. Participation in fantasy sports contests is subject to
-                        applicable laws and regulations in your jurisdiction. Users are responsible for ensuring
-                        compliance with their local laws before engaging in any contests.</p>
-                    <p>All data and statistics provided on this platform are for informational purposes only and are
-                        not guaranteed to be accurate or up-to-date. Gaimedays does not endorse or facilitate
-                        gambling in any form and is not liable for any financial losses incurred by users as a
-                        result of their participation.
+            <div class="dis_text">
+                    <h3 class="text-center">
+                        Disclaimer
+                    </h3>
+                    <p>This website is intended for entertainment purposes only. All data and statistics are
+                        provided on an "as-is" basis and may not reflect real-time accuracy. Player images, names,
+                        and other related content are used under fair use and are the property of their respective
+                        owners. Fantasy soccer scoring and league systems are for recreational use, and this site is
+                        not affiliated with any official sports organization or governing body. By using this site,
+                        you agree to our <strong>Terms of Service</strong> and <strong>Privacy Policy.</strong>
                     </p>
-                    <p>By using this platform, you agree to our Terms and Conditions and Privacy Policy. Always play
-                        responsibly.</p>
                 </div>
             </div>
         </div>

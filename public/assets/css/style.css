@@ -620,7 +620,14 @@ section.form_modal {
     padding: 60px 0;
     background-attachment: fixed;
 }
-
+section.form_modal h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+    max-width: 500px;
+    margin: 20px auto;
+    line-height: 1.2;
+}
 .form-set button {
     cursor: pointer;
     position: relative;
@@ -1086,10 +1093,6 @@ section.discalimer {
     margin: 0 auto;
 }
 
-.header-pages-cards {
-    width: 50%;
-}
-
 .header-pages-cards h3 {
     color: #ec661f;
     margin-bottom: 15px;
@@ -1370,7 +1373,8 @@ section.choose_us {
     display: flex;
     gap: 40px;
     margin-bottom: 50px;
-}
+    }
+
 
 .column {
     flex: 1;
@@ -1420,7 +1424,30 @@ section.our_about {
     background-repeat: no-repeat;
     height: 500px;
 }
-
+.our_about1 .content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.our_about1 .content .column {
+    width:50% !important;
+}
+.our_abt1_col {
+    background-color: #000;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    min-height: 170px;
+}
+.our_abt1_col:last-child{
+    min-height: 0;
+}
+.our_abt1_col p strong{
+    font-size: 22px;
+    margin-bottom: 15px;
+    display: block;
+}
 /* about styling end */
 
 /* gamize styling start */
@@ -1747,7 +1774,13 @@ fieldset {
     text-align: center;
     font-size: 2.5rem;
     color: var(--primary-color);
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+}
+section.reasons-section .container>p {
+    color: #000;
+    margin-bottom: 25px;
+    max-width: 1100px;
+    margin: 20px auto;
 }
 
 .offer-items {
@@ -1791,7 +1824,7 @@ fieldset {
 
 .reasons-section h2 {
     font-size: 2.5rem;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     color: var(--primary-color);
     text-align: center;
 }
@@ -3070,7 +3103,7 @@ div#mySidenavs {
 }
 
 .profile-image-dropdown {
-    background-image: url("../images/user.png");
+    background-image: url("../images/dummy.png");
 }
 
 

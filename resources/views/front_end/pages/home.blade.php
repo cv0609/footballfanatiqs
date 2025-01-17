@@ -18,6 +18,9 @@
 <!-- Game Modes section start -->
 <section class="game_mode">
     <div class="container">
+         <div class="left">
+            <h2>Game Modes</h2>
+          </div>
         <div class="row">
             <div class="col-md-4 col-sm-6">
                 <div class="game_inner">
@@ -80,10 +83,13 @@
 <!-- form modal Section start -->
 <section class="form_modal">
     <div class="container">
+        <h2>
+        Become A Top Coach Today
+        Play Now!
+        </h2>
         <div class="row">
             <div class="col-lg-6 col-sm-12">
                 <div class="img_pic" style="background-image: url(assets/images/play.png);">
-
                 </div>
             </div>
             <div class="col-lg-6 col-sm-12">
@@ -133,7 +139,7 @@
                             @enderror
                             <input type="password" placeholder="Re-Enter Password" id="password-field" name="password_confirmation">
                             <button type="submit" class="btn signup">create account</button>                        
-                            <hr />
+                            
                         </form>
                     </div>
 
@@ -232,13 +238,17 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="dis_text">
+            <div class="dis_text">
+                    <h3 class="text-center">
+                        Disclaimer
+                    </h3>
                     <p>This website is intended for entertainment purposes only. All data and statistics are
                         provided on an "as-is" basis and may not reflect real-time accuracy. Player images, names,
                         and other related content are used under fair use and are the property of their respective
                         owners. Fantasy soccer scoring and league systems are for recreational use, and this site is
                         not affiliated with any official sports organization or governing body. By using this site,
-                        you agree to our [Terms of Service] and [Privacy Policy].</p>
+                        you agree to our <strong>Terms of Service</strong> and <strong>Privacy Policy.</strong>
+                    </p>
                 </div>
             </div>
         </div>

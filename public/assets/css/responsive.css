@@ -380,6 +380,18 @@
     .team-btns {
         min-width: 700px;
     }
+    .my-matches .brooklyn-main {
+        overflow-x: scroll;
+    }
+    .brooklyn-main .matches-list {
+        min-width: 700px;
+    }
+    .leagues-list {
+        padding: 1.5rem;
+    }
+    .match-details .leagues-list {
+        min-width: 700px;
+    }
   
 }
 
@@ -565,6 +577,10 @@
     }
     .login {
         margin: 10px auto;
+    }
+    .avatar-content {
+        justify-content: center;
+        margin-top: 15px;
     }
 }
 
