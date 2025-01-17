@@ -4,6 +4,8 @@
 @php
 $PointCalculationService = app(App\Services\PointCalculationService::class);
 use Carbon\Carbon;
+
+dd($matchDetails);
 @endphp
 <!--Leagues Pages Banner Section Start -->
 <section class="fanatiqs-leagues-pages  bg-cover bg-no-repeat">
