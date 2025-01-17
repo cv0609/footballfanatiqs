@@ -26,7 +26,7 @@
                         @enderror
                         </fieldset>
                         <fieldset>
-                            <button name="submit" type="button" id="login-submit" data-submit="...Sending">
+                            <button name="submit" type="submit" id="login-submit" data-submit="...Sending">
                                 LOGIN</button>
                         </fieldset>
                         <p class="jump-text">
