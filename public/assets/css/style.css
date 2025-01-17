@@ -1865,13 +1865,6 @@ section.reasons-section .container>p {
 
 /* football styling end */
 
-
-
-
-
-
-
-
 /* Leagues CSS Start */
 
 /* League Page CSS Start */
@@ -3177,6 +3170,10 @@ div#mySidenavs {
     background-position: center;
     background-size: cover;
     background-blend-mode: multiply;
+    background-image: url(../images/login-signup-page-bg.jpg);
+    background-color: rgba(0 0 0/40%);
+    background-blend-mode: multiply;
+
 }
 
 .profile-side {
