@@ -52,7 +52,7 @@ dd($matchDetails);
                     <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
                         <div class="palyer-header">
                             <div class="team-logo">
-                                <img src="{{ asset('assets/images/bundesliga-logo.jpg') }}" alt="my-matches-header-logo">
+                                <img src="{{ $matchDetails->home_team_logo }}" alt="my-matches-header-logo">
                                 <h6>{{ $matchDetails->home_team_name ?? '' }}</h6>
                             </div>
                             <div class="match-details">
@@ -60,7 +60,7 @@ dd($matchDetails);
                             </div>
 
                             <div class="team-logo">
-                                <img src="{{ asset('assets/images/bundesliga-logo.jpg') }}" alt="my-matches-header-logo">
+                                <img src="{{ $matchDetails->away_team_logo }}" alt="my-matches-header-logo">
                                 <h6>{{ $matchDetails->away_team_name ?? '' }}</h6>
                             </div>
                         </div>
